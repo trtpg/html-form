@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    <script language="JavaScript">
+      function alertFunction() {
+        document.getElementById("alert-text").innerHTML = "you clicked the [Submit] button, but I don't know what to do yet!";
+      }
+    </script>
+  </head>
+
+  <body>
+    <header class="container background center ">
+      <h1><b>RWD - Assignment 2</b></h1>
+    </header>
+
+	  <div class="boxShadow margin">
+      <div class="container">
+  		  <h3><b>Responsive Web Design</b></h3>
+  		  <h5>Assignment 2, <span class="w3-opacity">April 23, 2017</span></h5>
+  		</div>
+
+  		<div class="container">
+  		  <p>According to the current survey, today there are more and more people use smart phones, tablets (portable devices)
+          to browse websites than on traditional desktop. It’s important to note that each portable devices has its own screen size,
+          and use different type of browsers. It is almost impossible for a traditional rigid design to fit all. So Response Web
+          Design is a new method, approach that helps a website to solve these problem so that text, images, layout are properly
+          restructured uniquely depends on a specific screen size. It helps to maximize users viewing experience for easy reading
+          and navigation with minimum of scrolling an panning, etc. Also with Responsive Web Design, there is only one code to use
+          in all different devices so that it helps to reduce maintenance cost instead of a needs to maintain multiple codes for each
+          group of devices used in traditional web design.
+        </p>
+  		</div>
+    </div>
+
+    <!--  form -->
+     <div class="form-container">
+      <form>
+        <h4>Please fill out comment if you have one</h4>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your First Name.." required>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your Last Name.." required>
+
+        <label for="state">State</label>
+        <select id="state" name="state">
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="CO">Colorado</option>
+          <option value="FL">Florida</option>
+          <option value="WA">Washington</option>
+        </select>
+
+        <label for=""> Male
+          <input type="radio" name="gender" value="0">
+        </label>
+        <label for=""> Female
+          <input type="radio" name="gender" value="0" checked>
+        </label>
+        <br>
+
+        <label for="comment">Comment</label>
+        <textarea id="comment" name="comment" style="height:150px" placeholder="Type your comment here..." required ></textarea>
+
+        <input type="submit" value="Submit" onclick="alertFunction()" >
+      </form>
+      <p id="alert-text"></p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container background">
+    	<p>Phong Tran - Assignment 2</p>
+    </footer>
+
+  </body>
+</html>
