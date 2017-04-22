@@ -3,11 +3,10 @@
   <head>
     <title>Assignment 2</title>
     <meta charset="UTF-8">
-    <meta name="viewport">
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
 
-    <script language="JavaScript">
+    <script>
       function alertFunction() {
         document.getElementById("alert-text").innerHTML = "you clicked the [Submit] button, but I don't know what to do yet!";
       }
@@ -57,11 +56,11 @@
           <option value="WA">Washington</option>
         </select>
 
-        <label for=""> Male
-          <input type="radio" name="gender" value="0">
+        <label for="male"> Male
+          <input type="radio" name="gender" id="male">
         </label>
-        <label for=""> Female
-          <input type="radio" name="gender" value="0" checked>
+        <label for="female"> Female
+          <input type="radio" name="gender" id="female" checked>
         </label>
         <br>
 
